@@ -139,4 +139,6 @@ CODE
 run 'chmod a+x .git/hooks/pre-commit'
 
 # Run Rubocop
-rails_command 'bundle exec rubocop --auto-correct'
+after_bundle do
+  rails_command 'bundle exec rubocop --auto-correct'
+end

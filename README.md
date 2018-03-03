@@ -44,10 +44,12 @@ For new apps the template can be applied as an option:
 
 ```
 rails new blog -m ~/timber/template.rb
+rails new blog -m https://raw.githubusercontent.com/lugolabs/timber/master/template.rb
 ```
 
 For existing applications, you can use the command:
 
 ```
 bin/rails app:template LOCATION=~/timber/template.rb
+bin/rails app:template LOCATION=https://raw.githubusercontent.com/lugolabs/timber/master/template.rb
 ```
